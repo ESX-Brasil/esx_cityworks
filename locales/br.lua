@@ -1,0 +1,16 @@
+Locales['br'] = {
+	['GPS_info'] = 'Um novo trabalho foi destacado no seu ~y~GPS',
+	['cancel_mission'] = 'Você ~r~cancelou~s~ a missão',
+	['pickup'] = 'Pressionar ~INPUT_CONTEXT~ para inspecionar o local de trabalho',
+	['end_service'] = 'Serviço final',
+	['take_service'] = 'Tome o serviço',
+	['end_service_notif'] = 'Terminou ~r~serviço',
+	['take_service_notif'] = 'Serviço iniciado',
+	['start_job'] = 'Pressionar ~b~F10 ~w~para iniciar o trabalho',
+	['Vehicle_Menu_Title'] = 'Serviço de Veículo',
+	['in_vehicle'] = '~r~Você deve estar fora do seu veículo!',
+	['vehicle_broken'] = '~r~Você precisa reparar o veículo antes de continuar!',
+	['bad_vehicle'] = 'Você só pode armazenar o ~b~Veículo de Serviço',
+	['not_good_veh'] = '~r~Você deve estar no seu veículo de serviço!',
+	['stop_npc'] = 'Trabalho ~g~completo~s~ : Volte para o depósito',
+}

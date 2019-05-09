@@ -135,8 +135,8 @@ function CloakRoomMenu()
     ESX.UI.Menu.Open(
         'default', GetCurrentResourceName(), 'cloakroom',
         {
-            title = 'Armário',
-			align    = 'right',
+            title    = _U('Vest_Menu_Title'), --'Armário',
+		      	align    = 'right',
             elements = elements
         },
         function(data, menu)
@@ -385,7 +385,7 @@ Citizen.CreateThread(function()
 	end
 end)
 
--- Detection de l'entrer/sortie de la zone du joueur
+-- Detecção da entrada / saída da zona do jogador
 Citizen.CreateThread(function()
 	while true do
 		Wait(1)
@@ -426,7 +426,7 @@ Citizen.CreateThread(function()
 	end
 end)
 
--- Action après la demande d'accés
+-- Ação após o pedido de acesso
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(10)

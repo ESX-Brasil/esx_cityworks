@@ -1,14 +1,15 @@
 Config                            = {}
 Config.DrawDistance               = 100.0
-Config.nameJob                    = "works"
-Config.nameJobLabel               = "Obras da cidade"
-Config.platePrefix                = "CWORKS"
+Config.nameJob                    = "works" -- Não mude este nome!!!
+Config.nameJobLabel               = _U('obras_cidade') --"Obras da cidade"
+Config.platePrefix                = _U('placas_carro_cidade') --"CWORKS"
 Config.Locale                     = 'br'
 
 Config.Vehicles = {
 	Truck = {
 		Spawner = 1,
-		Label = 'Caminhão de força e água',
+		Label = _U('caminhao_de_forca'),
+		--Label = 'Caminhão de força e água',
 		Hash = "boxville",
 		Livery = 0,
 		Trailer = "none",
@@ -24,8 +25,8 @@ Config.Zones = {
     Type    = 1,
 	BlipSprite = 354,
 	BlipColor = 46,
-	BlipName = Config.nameJobLabel.." : Comece os trabalhos da cidade",
-	hint = 'Pressione ~INPUT_CONTEXT~ para acessar o vestiário',
+	BlipName = Config.nameJobLabel.. _U('start_jobss'), --" : Comece os trabalhos da cidade",
+	hint = _U('start_bt_jobss'), --'Pressione ~INPUT_CONTEXT~ para acessar o vestiário',
   },
 
   VehicleSpawner = {
@@ -33,8 +34,8 @@ Config.Zones = {
 	Size  = {x = 1.5, y = 1.5, z = 0.3},
 	Color = {r = 11, g = 203, b = 159},
 	Type  = 1,
-	BlipName = Config.nameJobLabel.." : Veículo",
-	hint = 'Pressione ~INPUT_CONTEXT~ para selecionar um veículo',
+	BlipName = Config.nameJobLabel.. _U('carro_jobs'), --" : Veículo",
+	hint = _U('carro_bt_jobs'), --'Pressione ~INPUT_CONTEXT~ para selecionar um veículo',
   },
 
   VehicleSpawnPoint = {
@@ -49,8 +50,8 @@ Config.Zones = {
 	Size  = {x = 3.0, y = 3.0, z = 0.3},
 	Color = {r = 255, g = 0, b = 0},
 	Type  = 1,
-	BlipName = Config.nameJobLabel.." : Garragem",
-	hint = 'Pressione ~INPUT_CONTEXT~ para devolver o veículo',
+	BlipName = Config.nameJobLabel.. _U('garragem_carro_jobs'), --" : Garragem",
+	hint = _U('garragem_bt_jobs'), --'Pressione ~INPUT_CONTEXT~ para devolver o veículo',
   },
 
   Vente = {
@@ -58,19 +59,19 @@ Config.Zones = {
 	Size  = {x = 2.5, y = 2.5, z = 0.3},
 	Color = {r = 11, g = 203, b = 159},
 	Type  = 1,
-	BlipName = Config.nameJobLabel.." : Sacar dinheiro do trabalho",
+	BlipName = Config.nameJobLabel.. _U('dinheiro_saca_jobs'), --" : Sacar dinheiro do trabalho",
 
 	ItemTime = 500,
 	ItemDb_name = "pay_works",
-	ItemName = "Cheque da cidade",
+	ItemName = _U('cheque_cidade'), --"Cheque da cidade",
 	ItemMax = 45,
 	ItemAdd = 1,
 	ItemRemove = 1,
 	ItemRequires = "pay_works",
-	ItemRequires_name = "Cheque da cidade",
+	ItemRequires_name = _U('cheque_cidade'), --"Cheque da cidade",
 	ItemDrop = 100,
 	ItemPrice  = 450,
-	hint = 'Pressione ~INPUT_CONTEXT~ para descontar seus cheques da cidade',
+	hint = _U('cheque_bt_cidade'), --'Pressione ~INPUT_CONTEXT~ para descontar seus cheques da cidade',
   },
 
 }
